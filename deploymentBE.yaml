@@ -85,19 +85,19 @@ spec:
               number: 5000
 ---
 apiVersion: v1
+data:
+  BASE_URL_PORT: NTAwMA==
+  DATABASE_DATABASE: cGVvcGxl
+  DATABASE_HOST: ZGF0YWJhc2UtY2lsaXN0LmM1b2J6bTZ0b2xoby5hcC1zb3V0aGVhc3QtMS5yZHMuYW1hem9uYXdzLmNvbQ==
+  DATABASE_PASSWORD: MTIzNDU2Nzg=
+  DATABASE_PORT: MzMwNg==
+  DATABASE_USERNAME: YWRtaW4=
 kind: Secret
 metadata:
   name: mysecret
-  labels: 
-    app: backend
+  namespace: default
 type: Opaque
-data:
-  BASE_URL_PORT: "5000"
-  DATABASE_USERNAME: YWRtaW4=
-  DATABASE_PASSWORD: MTIzNDU2Nzg=
-  DATABASE_DATABASE: cGVvcGxl
-  DATABASE_HOST: database-cilist.c5obzm6tolho.ap-southeast-1.rds.amazonaws.com
-  DATABASE_PORT: "3306"
+
 
 
 
